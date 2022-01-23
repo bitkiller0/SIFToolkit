@@ -247,8 +247,8 @@ export function loadUtils(){
             let isSpecial = (itemObj.data.data?.duration?.units == "unti" || itemObj.data.data?.duration?.units == "spec");
             let SIFData = {
                 item : itemObj.id,
-                actor : itemObj.actor.id,
-                token : token??itemObj.actor.token?.id,
+                actor : itemObj?.actor.id,
+                token : token??itemObj?.actor.token?.id,
                 scene : game.scenes.viewed.id,
                 player : game.userId,
                 sif : itemObj.name,
