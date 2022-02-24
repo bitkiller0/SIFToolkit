@@ -25,6 +25,7 @@ export function setHooks(){
                 }else{
                     console.debug("SIFT | Placeables not ready");
                 }
+                reloadAttempts++;
             }catch (e){}
         }
     },300);
